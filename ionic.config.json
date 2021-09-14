@@ -1,5 +1,7 @@
 {
   "name": "JengaChess",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

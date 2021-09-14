@@ -1,0 +1,13 @@
+<div class="playerlist">
+    <table class="playertable">
+        <tr>
+            <th *ngFor = "let player of players; let i = index">Spieler {{ i + 1 }}</th>
+        </tr>
+        <tr>
+            <td *ngFor = "let player of players"><span class="time">{{ player.time | formatTime }}</span></td>
+        </tr>
+    </table>
+</div>
+<!-- <ion-button style="z-index: -1;" expand="block" fill="clear" shape="round">
+    {{playerName}}
+</ion-button> -->

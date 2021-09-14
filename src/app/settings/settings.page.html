@@ -1,0 +1,19 @@
+<ion-content [fullscreen]="true">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Settings</ion-title>
+            <ion-button (click)="close()" slot="end">
+                <ion-icon slot="icon-only" name="close"></ion-icon>
+            </ion-button>
+        </ion-toolbar>
+    </ion-header>
+    <ion-item button (click)="openAmountPicker()">
+        <ion-label>Player amount</ion-label>
+        <ion-note slot="end">{{amount}}</ion-note>
+    </ion-item>
+    <ion-item button (click)="openTimePicker()">
+        <ion-label>Time</ion-label>
+        <ion-note slot="end">{{minutes}}:{{showseconds}}</ion-note>
+    </ion-item>
+
+</ion-content>

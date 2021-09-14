@@ -1,0 +1,14 @@
+.time {
+    float: right;
+    padding-right: 10px;
+}
+.playertable {
+    width: 100%;
+    td,
+    th {
+        border-right: 1px solid #000;
+        &:last-child {
+            border: none;
+        }
+    }
+}

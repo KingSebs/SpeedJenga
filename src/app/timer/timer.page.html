@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true">
+  <ion-header translucent="true">
+    <ion-toolbar>
+      <ion-button (click)="openSettings()" slot="end">
+        <ion-icon slot="icon-only" name="cog"></ion-icon>
+      </ion-button>
+      <ion-button (click)="pauseTimer()">
+        <ion-icon slot="icon-only" name="stop-circle-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="reset()">
+        <ion-icon slot="icon-only" name="refresh-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-toolbar>
+  </ion-header>
+  <app-playerlist [players]="player"></app-playerlist>
+
+  <div class="content" [ngClass]="{warning: player[current]?.close === true}" (click)="startGame()">
+    <span class="time">{{ showTime }}</span>
+  </div>
+</ion-content>
