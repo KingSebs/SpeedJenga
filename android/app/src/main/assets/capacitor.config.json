@@ -1,18 +1,18 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "JengaChess",
-  "bundledWebRuntime": false,
-  "npmClient": "npm",
-  "webDir": "www",
-  "plugins": {
-    "SplashScreen": {
-      "launchShowDuration": 0
-    }
-  },
-  "cordova": {},
-  "server": {
-    "allowNavigation": [
-      "localhost:8100/*"
-    ]
-  }
+	"appId": "io.ionic.starter",
+	"appName": "JengaChess",
+	"bundledWebRuntime": false,
+	"npmClient": "npm",
+	"webDir": "www",
+	"plugins": {
+		"SplashScreen": {
+			"launchShowDuration": 0
+		}
+	},
+	"cordova": {},
+	"server": {
+		"allowNavigation": [
+			"localhost:8100/*"
+		]
+	}
 }

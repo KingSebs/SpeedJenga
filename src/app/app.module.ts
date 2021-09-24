@@ -19,8 +19,6 @@ const routes: Routes = [
 
 ];
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +33,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })
   ],
   providers: [
     StatusBar,

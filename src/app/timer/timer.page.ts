@@ -36,6 +36,7 @@ export class TimerPage {
         this.amount = res.player ? res.player : 2;
         this.time = res.time ? res.time : 120;
         this.reset();
+        this.transformTime();
       });
     });
     return await modal.present();

@@ -44,7 +44,7 @@ export class SettingsPage {
   public ionViewWillEnter() {
     this.nativeStorage.getItem("settings").then((res) => {
       this.amount = res.player;
-      this.time = res.time;
+      this.time = Math.abs(res.time);
     }).then(() => {
       this.minutes = Math.floor(this.time / 60);
       this.seconds = this.time - (this.minutes * 60);
